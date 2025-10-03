@@ -1,3 +1,7 @@
 export const Header = ({title}) => {
-  return <h2>{title}</h2>;
+  return (
+    <div className="page-header fade-in">
+      <h1 className="page-title">{title}</h1>
+    </div>
+  );
 };

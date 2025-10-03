@@ -1,18 +1,28 @@
 
-import './App.css'
-import { Home } from './container/Home.jsx'
+import './index.css'
 import { Navigation } from './component/Navigation.jsx';
 import { MyRouter } from './routes.jsx';
 
 
 
+
 function App() {
 
+  //const [isSubmitted, setIsSubmitted] = useState(false);
 
-  return <>
-  <Navigation/>
-  <MyRouter/>
-  </>
+
+
+
+
+
+  return (
+    <div className="page">
+      <Navigation />
+      <main>
+        <MyRouter />
+      </main>
+    </div>
+  )
 }
 
 export default App
