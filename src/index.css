@@ -83,16 +83,17 @@ p {
 }
 
 .btn-secondary {
-  background: white;
-  color: #374151;
-  border: 1px solid #d1d5db;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  background: rgba(255, 255, 255, 0.1);
+  color: white;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
 }
 
 .btn-secondary:hover {
-  background: #f9fafb;
-  border-color: #9ca3af;
+  background: rgba(255, 255, 255, 0.2);
+  border-color: rgba(255, 255, 255, 0.3);
   transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
 /* Clean Navigation */
@@ -273,7 +274,7 @@ p {
 .hero {
   text-align: center;
   padding: 4rem 0;
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  background: linear-gradient(135deg, #1e40af 0%, #3b82f6 50%, #6366f1 100%);
   color: white;
   margin-bottom: 3rem;
 }
@@ -283,11 +284,12 @@ p {
   font-weight: 700;
   margin-bottom: 1rem;
   line-height: 1.2;
+  color: white;
 }
 
 .hero-subtitle {
   font-size: 1.25rem;
-  opacity: 0.9;
+  color: rgba(255, 255, 255, 0.9);
   margin-bottom: 2rem;
   max-width: 600px;
   margin-left: auto;
